@@ -9,7 +9,7 @@ from warden import plugins
 
 
 def build() -> crescent.Bot:
-    bot = crescent.Bot(config.TOKEN, banner=None)
+    bot = crescent.Bot(config.TOKEN)
 
     for plugin in plugins.PLUGINS:
         bot.plugins.load(plugin)
